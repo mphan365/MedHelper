@@ -1,0 +1,1060 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>MedHelp Project</title>
+
+    <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../../global/global.css">
+    <link rel="stylesheet" href="medicationsearch.css">
+    <!-- Scrollbar Custom CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
+
+    <!-- Font Awesome JS -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <!-- Sidebar  -->
+        <nav id="sidebar">
+            <div class="sidebar-header">
+                <h3>MedHelp Project</h3>
+            </div>
+
+            <ul class="list-unstyled components">
+                <p>Categories</p>
+                <li class="active">
+                    <a href="#CardioMenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Cardiology</a>
+                    <ul class="collapse list-unstyled" id="CardioMenu">
+                        <li>
+                            <a href="#">Green Conditions</a>
+                        </li>
+                        <li>
+                            <a href="#">Blue Conditions</a>
+                        </li>
+                        <li>
+                            <a href="#">Red Conditions</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="active">
+                    <a href="#RespMenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Respiratory</a>
+                    <ul class="collapse list-unstyled" id="RespMenu">
+                        <li>
+                            <a href="#">Green Conditions</a>
+                        </li>
+                        <li>
+                            <a href="#">Blue Conditions</a>
+                        </li>
+                        <li>
+                            <a href="#">Red Conditions</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="active">
+                    <a href="#GastroMenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Gastroenterology</a>
+                    <ul class="collapse list-unstyled" id="GastroMenu">
+                        <li>
+                            <a href="#">Green Conditions</a>
+                        </li>
+                        <li>
+                            <a href="#">Blue Conditions</a>
+                        </li>
+                        <li>
+                            <a href="#">Red Conditions</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="active">
+                    <a href="#RenalMenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Renal</a>
+                    <ul class="collapse list-unstyled" id="RenalMenu">
+                        <li>
+                            <a href="#">Green Conditions</a>
+                        </li>
+                        <li>
+                            <a href="#">Blue Conditions</a>
+                        </li>
+                        <li>
+                            <a href="#">Red Conditions</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="active">
+                    <a href="#EndoMenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Endocrinology</a>
+                    <ul class="collapse list-unstyled" id="EndoMenu">
+                        <li>
+                            <a href="#">Green Conditions</a>
+                        </li>
+                        <li>
+                            <a href="#">Blue Conditions</a>
+                        </li>
+                        <li>
+                            <a href="#">Red Conditions</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="active">
+                    <a href="#HaemeMenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Haematology</a>
+                    <ul class="collapse list-unstyled" id="HaemeMenu">
+                        <li>
+                            <a href="#">Green Conditions</a>
+                        </li>
+                        <li>
+                            <a href="#">Blue Conditions</a>
+                        </li>
+                        <li>
+                            <a href="#">Red Conditions</a>
+                        </li>
+                    </ul>
+                </li>
+
+
+            </ul>
+
+        </nav>
+
+        <!-- Page Content  -->
+        <div id="content">
+
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+
+                    <button type="button" id="sidebarCollapse" class="btn btn-light">
+                        <i class="fas fa-bars"></i>
+                        <span>Menu</span>
+                    </button>
+                    <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fas fa-align-justify"></i>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="nav navbar-nav ml-auto">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="../../index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Search</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Medications</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Random</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+            <h1> Common Medication Dosages </h1>
+            <input id="myInput" type="text" placeholder="Search..">
+            <table id="dtBasicExample" class="table table-striped table-bordered table-sm" cellspacing="0" width="100%">
+                <thead>
+                    <tr>
+                      <th>Name</th>
+                      <th>Dose</th>
+                      <th>Notes</th>
+                    </tr>
+                </thead>
+                <tbody id="myTable">
+                    <tr>
+                      <td>Buprenorphine</td>
+                      <td>5 to 10 microg/day topical (patch)</td>
+                      <td>AKA Norspan, change weekly</td>
+                    </tr>
+                    <tr>
+                      <td>Celecoxib</td>
+                      <td>200 mg PO BD</td>
+                      <td>AKA Celebrex, Dose reduce by 50% in liver dysfunction</td>
+                    </tr>
+                    <tr>
+                      <td>Fentanyl</td>
+                      <td>12 or 25 mcg/h patch changed every 3 days</td>
+                      <td>AKA Actiq</td>
+                    </tr>
+                    <tr>
+                      <td>Ibuprofen</td>
+                      <td>400mg PO TDS</td>
+                      <td>Avoid in people at risk of GI bleed/renal insult</td>
+                    </tr>
+                    <tr>
+                      <td>Ketorolac</td>
+                      <td>50-100mg IM stat</td>
+                      <td>Rarely written up regularly. Particularly good for musculoskeletal pain</td>
+                    </tr>
+                    <tr>
+                      <td>Meloxicam</td>
+                      <td>7.5 mg PO daily</td>
+                      <td>AKA Mobic, Avoid in the elderly, renal impairment and/or a history of gastrointestinal bleeding</td>
+                    </tr>
+                    <tr>
+                      <td>Morphine</td>
+                      <td>2.5–5 mg subcut or IV Q2H</td>
+                      <td>Can be unlimited in palliative setting</td>
+                    </tr>
+                    <tr>
+                      <td>Oxycodone IR</td>
+                      <td>5–10 mg PO Q4H (max 40 mg)</td>
+                      <td>AKA Endone, less for the elderly, can constipate<br/>onset of action ~!!30 mins and peak ~1hr, Q3H might also be effective</td>
+                    </tr>
+                    <tr>
+                      <td>Targin</td>
+                      <td>5/2.5 mg PO BD or <br/>10/5 mg PO BD or <br/> 20/10 mg PO BD</td>
+                      <td>Oxycodone+Naloxone, most start on 10/5 (or for under 50 kg, 5/2.5). Up or down titrate depending on breakthrough requirements </td>
+                    </tr>
+                    <tr>
+                      <td>Paracetamol</td>
+                      <td>1 g PO Q4H (or QID)</td>
+                      <td>AKA Panadol/Tylenol Reduce to 3 g/day or less in severe liver dysfunction</td>
+                    </tr>
+                    <tr>
+                      <td>Tramadol SR </td>
+                      <td>100 mg PO TDS</td>
+                      <td>aka Tramal, Usually started at lower doses (e.g. BD) and up-titrated if necessary</td>
+                    </tr>
+                    <tr>
+                      <td>Acyclovir</td>
+                      <td>200 mg PO 5 times daily (minor viral infection) <br/> 400–800 mg PO 5 times daily (shingles) <br/> 10–15 mg/kg IV Q8H (HSV encephalitis)</td>
+                      <td>AKA Zovirax, Also available topically for cold sores!</td>
+                    </tr>
+                    <tr>
+                      <td>Amoxicillin</td>
+                      <td>500 mg PO TDS</td>
+                      <td>AKA Amoxil</td>
+                    </tr>
+                    <tr>
+                      <td>Amoxicillin with clavulanic acid </td>
+                      <td>875/125 mg PO BD</td>
+                      <td>AKA Augmentin Duo Forte, usual course is 5 days only</td>
+                    </tr>
+                    <tr>
+                      <td>Ampicillin</td>
+                      <td>1 g IV QID</td>
+                      <td>AKA Ampicyn</td>
+                    </tr>
+                    <tr>
+                      <td>Azithromycin </td>
+                      <td>500 mg IV (or PO) daily</td>
+                      <td>AKA Zithromax</td>
+                    </tr>
+                    <tr>
+                      <td>Benzylpenicillin</td>
+                      <td>1.2 g IV QID (usual dose) <br/> 2.4 g IV QID (meningitis or IE dose)</td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>Cefaclor</td>
+                      <td>500 mg PO TDS</td>
+                      <td>AKA Keflor, Good respiratory cover</td>
+                    </tr>
+                    <tr>
+                      <td>Cefazolin</td>
+                      <td>500 mg IV TDS <br/> 1 g IV TDS (severe infections) <br/> 2 g IV TDS (endocarditis dose)</td>
+                      <td>Favoured by orthopods. Can be used up to QID, has been tolerated up to 12 g/day</td>
+                    </tr>
+                    <tr>
+                      <td>Ceftazidime</td>
+                      <td>1–2 g IV TDS</td>
+                      <td>Usually stepped down to ciprofloxacin</td>
+                    </tr>
+                    <tr>
+                      <td>Ceftriaxone</td>
+                      <td>1 g IV daily</td>
+                      <td>Does not cover LAME – Listeria, atypicals, Mycobacteria and Enterococcus. Usually stepped down to cephalexin</td>
+                    </tr>
+                    <tr>
+                      <td>Cephalexin</td>
+                      <td>500 mg PO QID</td>
+                      <td>AKA Keflex, If compliance due to time is an issue (e.g. busy people), 1 g BD is an acceptable alternative</td>
+                    </tr>
+                    <tr>
+                      <td>Chloramphenicol</td>
+                      <td>1–2 cm topical affected eye BD or <br/>2 drops topical each affected eye BD</td>
+                      <td>Comes in ointment or drops. The usual course is 5–7 days</td>
+                    </tr>
+                    <tr>
+                      <td>Ciprofloxacin</td>
+                      <td>500 mg PO BD (usual dose) <br/>750 mg PO BD (severe infection)</td>
+                      <td>Restricted access in Australia – must call PBS for authority. IV mixture also available</td>
+                    </tr>
+                    <tr>
+                      <td>Clindamycin</td>
+                      <td>150-300mg PO QID</td>
+                      <td>AKA Cleocin</td>
+                    </tr>
+                    <tr>
+                      <td>Doxycycline</td>
+                      <td>100 mg PO BD (treatment dose) <br/> 50 mg PO daily (prophylactic dose) <br/> 100 mg PO D (malaria prophylaxis)</td>
+                      <td>Don’t lie down afterwards causes painful oesophageal erosion</td>
+                    </tr>
+                    <tr>
+                      <td>Erythromycin</td>
+                      <td>400 mg PO QID</td>
+                      <td>Can also be used as a GI pro-kinetic</td>
+                    </tr>
+                    <tr>
+                      <td>Famciclovir</td>
+                      <td>250–500 mg PO TDS</td>
+                      <td>AKA Ezovir or Famvir, must be renally adjusted when eGFR under 30</td>
+                    </tr>
+                    <tr>
+                      <td>Flucloxacillin</td>
+                      <td>1–2 g IV QID (acute) <br/> 500 mg–1 g PO QID (step-down, or less severe infections)</td>
+                      <td>Standard for most skin-related infections. Beware liver dysfunction</td>
+                    </tr>
+                    <tr>
+                      <td>Fluconazole</td>
+                      <td>200 mg PO daily (prophylaxis) <br/>400 mg PO daily (systemic fungal infection)</td>
+                      <td>Beware liver dysfunction</td>
+                    </tr>
+                    <tr>
+                      <td>Gentamicin</td>
+                      <td>4–6 mg/kg IV daily</td>
+                      <td>AKA Gent, Gentamicin levels should be done after the third dose, and then after every subsequent dose. Should not be given indefinitely due to risk of nephro- and ototoxicity</td>
+                    </tr>
+                    <tr>
+                      <td>Meropenem</td>
+                      <td>1 g IV TDS</td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>Metronidazole</td>
+                      <td>500 mg PO TDS (C. difficile) <br/>400 mg IV BD (triple anti’s)</td>
+                      <td>AKA Flagyl or Metro, More effective orally for C. difficile infections</td>
+                    </tr>
+                    <tr>
+                      <td>Moxifloxacin</td>
+                      <td>400 mg PO or IV daily</td>
+                      <td>Used commonly in pneumonia with penicillin allergies. Often requires approval from antibiotic stewardship</td>
+                    </tr>
+                    <tr>
+                      <td>Tazocin</td>
+                      <td>4.5 g IV TDS</td>
+                      <td>Piperacillin + Tazobactam, QID in febrile neutropenia</td>
+                    </tr>
+                    <tr>
+                      <td>Trimethoprim</td>
+                      <td>300 mg PO nocte</td>
+                      <td>Given nocte as it stays in the bladder longer overnight. Avoid in pregnancy</td>
+                    </tr>
+                    <tr>
+                      <td>Bactrim DS</td>
+                      <td>800/160 mg PO daily (prophylaxis) <br/> 1.6 g/320 mg PO BD (treatment dose) <br/> 800/160 mg PO BD twice weekly (respiratory prophylaxis)</td>
+                      <td>Trimethoprim + Sulfamethoxazole aka Resprim Forte <br/> Patients will usually know how they take their Bactrim, it is important to clarify due to the many different regimens. Can be myelosuppressive</td>
+                    </tr>
+                    <tr>
+                      <td>Valacyclovir</td>
+                      <td>400 mg PO daily (prophylaxis)</td>
+                      <td>Can be escalated to BD or even TDS for treatment of minor viral infections in the immunocompromised</td>
+                    </tr>
+                    <tr>
+                      <td>Vancomycin</td>
+                      <td>1.5 g IV TDS</td>
+                      <td>Vancomycin levels should be performed after the third dose, usually every second day (more frequently in the setting of renal impairment)</td>
+                    </tr>
+                    <tr>
+                      <td>Coloxyl + Senna</td>
+                      <td>100/16 mg (2 tabs) PO BD</td>
+                      <td>Sometimes just given as a single nocte dose depending on requirements. Docusate (coloxyl) can be prescribed without senna at the same dose <br/>Coloxyl = softener, senna = stimulant</td>
+                    </tr>
+                    <tr>
+                      <td>Fleet Enema</td>
+                      <td>1–2 enemas PR daily PRN</td>
+                      <td>Avoid multiple enemas in a 24-h period if possible <br/> Avoid in AKI/CKD due to phosphate content</td>
+                    </tr>
+                    <tr>
+                      <td>Lactulose</td>
+                      <td>20 mL PO BD (constipation) <br/> 30 mL PO up to Q1H (hepatic encephalopathy)</td>
+                      <td>Down-titrate the Lactulose in hepatic encephalopathy once patient begins to open their bowels and their conscious state improves</td>
+                    </tr>
+                    <tr>
+                      <td>Microlax enema</td>
+                      <td>1 sachet PO daily <br/> 1–2 sachets PO Q10H PRN</td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>PicoPrep</td>
+                      <td>2 PO usually at 1600 and 1800 day prior to endoscopy, with a third PRN at 0600 day of scope</td>
+                      <td>Safe to use in renal patients</td>
+                    </tr>
+                    <tr>
+                      <td>Cyclizine</td>
+                      <td>50 mg PO or <br/> IV Q8H PRN</td>
+                      <td>Good for post-op nausea, can be given s/c (25-50mg)</td>
+                    </tr>
+                    <tr>
+                      <td>Domperidone </td>
+                      <td>10 mg PO TDS or <br/>QID pre-meals</td>
+                      <td>AKA Motilium, Alternative to metoclopramide for intractable nausea and vomiting, diabetic gastroparesis</td>
+                    </tr>
+                    <tr>
+                      <td>Metoclopramide </td>
+                      <td>10 mg PO/IV/IM Q8H PRN (up to maximum of 80 mg in palliative)<br/>Can also be 10-20mg PO/SC</td>
+                      <td>aka Maxolon <br/>Monitor for dystonic reactions <br/> Contraindicated in bowel obstruction, Parkinson’s disease</td>
+                    </tr>
+                    <tr>
+                      <td>Odansetron</td>
+                      <td>4–8 mg PO/SL/IV Q8H PRN</td>
+                      <td>aka Zofran, Can be constipating</td>
+                    </tr>
+                    <tr>
+                      <td>Prochlorperazine</td>
+                      <td>5–10 mg PO Q8H or Q6H PRN <br/> 12.5 mg IV/IM Q8H or Q6H</td>
+                      <td>AKA Stemetil <br/>Central dopaminergic effects, nausea with migraines or vertigo</td>
+                    </tr>
+                    <tr>
+                      <td>Adenosine</td>
+                      <td>6 mg rapid IV <br/> then 12 mg after 1–2 min <br/>then 18 mg after another 1–2 min</td>
+                      <td>Used for SVT</td>
+                    </tr>
+                    <tr>
+                      <td>Adrenaline</td>
+                      <td>1 mg rapid IV (ALS)<br/> 0.5mg IM stat anaphylaxis</td>
+                      <td> Cardiac arrest and anaphylaxis</td>
+                    </tr>
+                    <tr>
+                      <td>Amiodarone (ALS)</td>
+                      <td>300 mg IV stat (ALS) <br/> 150-300m mg in 100mL 5% dextrose IV over 30-60 min (loading dose in AF or A. flutter) <br/> then 900-1200 mg in 500 mL dextrose over 24/12 (maintenance)</td>
+                      <td>Cardiac arrest and AF and A Flutter</td>
+                    </tr>
+                    <tr>
+                      <td>Atropine</td>
+                      <td>0.4 - 1mg IV every 5 min (max 2 mg)</td>
+                      <td>Bradyarrhythmias, anticholinesterase overdose (with pralidoxime)</td>
+                    </tr>
+                    <tr>
+                      <td>Calcium Chloride 10%</td>
+                      <td>10 mL rapid IV every 3 to 5 min</td>
+                      <td>Hyperkalemia, stabilises cardiac membrane</td>
+                    </tr>
+                    <tr>
+                      <td>Lignocaine</td>
+                      <td>100 mg rapid IV every 3 to 5 min</td>
+                      <td>Can be used in cardiac arrest</td>
+                    </tr>
+                    <tr>
+                      <td>Noradrenaline</td>
+                      <td>2 mg in 500 mL NaCl 0.9% IV infusion at 1 5 mL/h</td>
+                      <td>Vasopressor</td>
+                    </tr>
+                    <tr>
+                      <td>Amiodarone oral</td>
+                      <td>100 mg PO mane (maintenance) <br/> 300–400 mg PO stat (loading dose)</td>
+                      <td>aka codarone, monitor thyroid function</td>
+                    </tr>
+                    <tr>
+                      <td>Amlodipine</td>
+                      <td>5 mg PO daily</td>
+                      <td>AKA Norvasc</td>
+                    </tr>
+                    <tr>
+                      <td>Aspirin</td>
+                      <td>100 mg PO mane <br/> 300 mg PO stat (ACS)</td>
+                      <td>aka Astrix or Cartia</td>
+                    </tr>
+                    <tr>
+                      <td>Atenolol</td>
+                      <td>25–50 mg PO daily</td>
+                      <td>aka Noten</td>
+                    </tr>
+                    <tr>
+                      <td>Atorvastatin</td>
+                      <td>40 mg PO daily (standard) <br/> 20 mg PO daily (liver reduced) <br/> 80 mg PO daily (post-ACS)</td>
+                      <td>might consider dose reduce in liver dysfunction</td>
+                    </tr>
+                    <tr>
+                      <td>Bisoprolol</td>
+                      <td>2.5–10 mg PO daily <br/> std starting dose is 5mg PO daily</td>
+                      <td>aka Bicor</td>
+                    </tr>
+                    <tr>
+                      <td>Carvedilol</td>
+                      <td>6.25 mg PO daily</td>
+                      <td>aka Dicarz</td>
+                    </tr>
+                    <tr>
+                      <td>Clopidogrel</td>
+                      <td>75 mg PO mane <br/> 600 mg PO (ACS)</td>
+                      <td>CoPlavix = 75mg CLopidogrel + 100mg Aspirin <br/> use restricted on PBS to post-ACS, stroke, or cardiac stent</td>
+                    </tr>
+                    <tr>
+                      <td>Digoxin</td>
+                      <td>62.5 mcg PO mane <br/> 500 mcg PO stat with 250 mcg 6 hours later <br/> 250 mcg another 6 h later (loading dose)</td>
+                      <td>serum levelscan be done to ensure within therapeutic window</td>
+                    </tr>
+                    <tr>
+                      <td>Diltiazem SR</td>
+                      <td>180 mg PO daily</td>
+                      <td>aka Cardizem, increase by 60mg as required</td>
+                    </tr>
+                    <tr>
+                      <td>Frusemide</td>
+                      <td>40 mg PO mane (start) <br/> 40 mg PO BD (active diuresis)</td>
+                      <td>aka lasix and uremide, increase by 40mg as required</td>
+                    </tr>
+                    <tr>
+                      <td>GTN</td>
+                      <td>Anginine 300 to 600 microg PO PRN <br/>Nitrolingual spray 400 microg sublingual PRN</td>
+                      <td>1 Anginine is 600 microg</td>
+                    </tr>
+                    <tr>
+                      <td>Indapamide</td>
+                      <td>1.5 - 2.5 mg PO daily</td>
+                      <td>aka Natrilix</td>
+                    </tr>
+                    <tr>
+                      <td>Ibesartan</td>
+                      <td>150 mg PO daily</td>
+                      <td>aka Avapro</td>
+                    </tr>
+                    <tr>
+                      <td>Isosorbide mononitrate SR</td>
+                      <td>30 - 60 mg PO mane</td>
+                      <td>small vessel ischaemia aka ISNM, Imdur</td>
+                    </tr>
+                    <tr>
+                      <td>Metoprolol</td>
+                      <td>25mg PO BD</td>
+                      <td>AKA Minax, up to 100mg PO BD</td>
+                    </tr>
+                    <tr>
+                      <td>Metoprolol XR</td>
+                      <td>47.5 – 90 mg PO daily</td>
+                      <td>aka Toprol</td>
+                    </tr>
+                    <tr>
+                      <td>Nebivolol</td>
+                      <td>1.25 – 10 mg PO daily</td>
+                      <td>aka Nebilet</td>
+                    </tr>
+                    <tr>
+                      <td>Nicorandil </td>
+                      <td>10 mg PO daily</td>
+                      <td>aka Ikorel</td>
+                    </tr>
+                    <tr>
+                      <td>Olemsartan</td>
+                      <td>20–40 mg PO daily</td>
+                      <td>aka Olmetec</td>
+                    </tr>
+                    <tr>
+                      <td>Perindopril</td>
+                      <td>2.5 – 10 mg PO daily</td>
+                      <td>aka Coversyl</td>
+                    </tr>
+                    <tr>
+                      <td>Prazosin</td>
+                      <td>5 mg PO BD</td>
+                      <td>Minipres</td>
+                    </tr>
+                    <tr>
+                      <td>Ramipril</td>
+                      <td>5 - 10 mg PO daily</td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>Rosuvastatin</td>
+                      <td>5 mg PO daily (std) <br/>up to 20 mg PO daily (post ACS)</td>
+                      <td>aka Crestor</td>
+                    </tr>
+                    <tr>
+                      <td>Simvastatin</td>
+                      <td>20 - 40 mg PO daily</td>
+                      <td>aka Zocor, Simva</td>
+                    </tr>
+                    <tr>
+                      <td>Sotalol</td>
+                      <td>80 mg PO BD</td>
+                      <td>aka Betaloc</td>
+                    </tr>
+                    <tr>
+                      <td>Spironolactone</td>
+                      <td>12.5 – 25 mg PO mane</td>
+                      <td>aka Spiro, Aldactone</td>
+                    </tr>
+                    <tr>
+                      <td>Telmisartan </td>
+                      <td>40 - 80 mg PO daily</td>
+                      <td>aka Micardis</td>
+                    </tr>
+                    <tr>
+                      <td>Ticagrelor</td>
+                      <td>90 mg PO BD <br/> 180 mg PO stat (loading dose)</td>
+                      <td>aka Brilinta</td>
+                    </tr>
+                    <tr>
+                      <td>Verapamil XR</td>
+                      <td>180 – 240 mg PO daily</td>
+                      <td>aka Isoptin</td>
+                    </tr>
+                    <tr>
+                      <td>Budesonide</td>
+                      <td>200 microg inh BD</td>
+                      <td>aka Pulmicort</td>
+                    </tr>
+                    <tr>
+                      <td>Symbicort</td>
+                      <td>200/6 microg inh daily to BD</td>
+                      <td>Budesonide + eformoterol </td>
+                    </tr>
+                    <tr>
+                      <td>Cetirizine </td>
+                      <td>10 mg PO daily</td>
+                      <td>aka Zyrtec</td>
+                    </tr>
+                    <tr>
+                      <td>Seretide</td>
+                      <td>250/25 two puffs inh BD</td>
+                      <td>Fluticasone + salmeterol </td>
+                    </tr>
+                    <tr>
+                      <td>Hydrocortisone</td>
+                      <td>100 mg IV QID</td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>Ipratropium </td>
+                      <td>500 microg neb QID</td>
+                      <td>aka Atrovent</td>
+                    </tr>
+                    <tr>
+                      <td>Montelukast</td>
+                      <td>5 – 10 mg PO daily</td>
+                      <td>Singulair</td>
+                    </tr>
+                    <tr>
+                      <td>Prednisolone</td>
+                      <td>Up to 50 mg PO daily</td>
+                      <td>aka Prednisone, wean over 72hrs</td>
+                    </tr>
+                    <tr>
+                      <td>Promethazine</td>
+                      <td>25 mg PO daily or stat</td>
+                      <td>aka Phnergen, sedating, alternative is loratadine</td>
+                    </tr>
+                    <tr>
+                      <td>Salbutamol MDI</td>
+                      <td>100–200 mcg inhaled PRN <br/> 5 mg neb QID </td>
+                      <td>Ventolin</td>
+                    </tr>
+                    <tr>
+                      <td>Tiotroprium</td>
+                      <td>18 microg PO daily</td>
+                      <td>aka Spiriva</td>
+                    </tr>
+                    <tr>
+                      <td>Gastrogel</td>
+                      <td>20 – 30 mL PO stat</td>
+                      <td>120 mL/day maximum</td>
+                    </tr>
+                    <tr>
+                      <td>Azathioprine </td>
+                      <td>50 mg PO daily (starting dose, up titrated to 1.5 mg/kg)</td>
+                      <td>aka Imuran</td>
+                    </tr>
+                    <tr>
+                      <td>Esomeprazole </td>
+                      <td>20 – 40 mg PO daily</td>
+                      <td>aka Nexium</td>
+                    </tr>
+                    <tr>
+                      <td>Lactulose </td>
+                      <td>30 mL PO up to Q1H for hepatic encephalopathy</td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>Lansoprazole</td>
+                      <td>30 mg (1 sachet) PEG daily</td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>Methotrexate</td>
+                      <td>12.5 – 25 mg PO weekly</td>
+                      <td>5 mg folic acid every other day</td>
+                    </tr>
+                    <tr>
+                      <td>Omeprazole</td>
+                      <td>20 mg PO daily</td>
+                      <td>aka Maxor</td>
+                    </tr>
+                    <tr>
+                      <td>Pantoprazole</td>
+                      <td>40 mg PO mane (GORD) <br/> 40 mg IV in 100 mL N/saline over 5 h (GI bleed) <br/> 40 mg PO BD (step-down for one month post-GI bleed)</td>
+                      <td>aka Somac</td>
+                    </tr>
+                    <tr>
+                      <td>Predsol Enema</td>
+                      <td>20 mg PR mane</td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>Predsol suppository</td>
+                      <td>5 mg PO nocte</td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>Propanolol</td>
+                      <td>20 mg PO TDS</td>
+                      <td>aka Deralin</td>
+                    </tr>
+                    <tr>
+                      <td>Rifmaxin</td>
+                      <td>550 mg PO BD (Hepatic encephalopathy)</td>
+                      <td>AKA Rifamax</td>
+                    </tr>
+                    <tr>
+                      <td>Sulfasalazine</td>
+                      <td>1 g PO BD</td>
+                      <td>Up to 4 g/day</td>
+                    </tr>
+                    <tr>
+                      <td>Terlipressin</td>
+                      <td>0.85 mg IV QID (hepatorenal syndrome)</td>
+                      <td>must wean</td>
+                    </tr>
+                    <tr>
+                      <td>Chlorpromazine </td>
+                      <td>5–50 mg IV stat</td>
+                      <td>aka Largactil</td>
+                    </tr>
+                    <tr>
+                      <td>Clobazam</td>
+                      <td>5 – 10 mg PO nocte</td>
+                      <td>Anticonvulsant for refractory seizures</td>
+                    </tr>
+                    <tr>
+                      <td>Clonazepam</td>
+                      <td>0.5 – 1 mg PO nocte</td>
+                      <td>clonazepam comes in subligual drops 2.5mg/mL - so 5 drops is 0.5mg</td>
+                    </tr>
+                    <tr>
+                      <td>Diazepam</td>
+                      <td>5–10 mg slow IV every 5 min (status epilepticus)</td>
+                      <td>aka Valium</td>
+                    </tr>
+                    <tr>
+                      <td>Donepezil </td>
+                      <td>5–10 mg PO daily</td>
+                      <td>aka Aricept</td>
+                    </tr>
+                    <tr>
+                      <td>Levetiracetam</td>
+                      <td>250 mg PO BD (starting dose)</td>
+                      <td>aka Keppra</td>
+                    </tr>
+                    <tr>
+                      <td>Phenytoin</td>
+                      <td>200 – 500 mg PO daily</td>
+                      <td>requires therapeutic level monitoring</td>
+                    </tr>
+                    <tr>
+                      <td>Pregabalin</td>
+                      <td>75 mg PO BD (up to 300 mg PO BD)</td>
+                      <td>aka Lyrica, requires renal adjustment</td>
+                    </tr>
+                    <tr>
+                      <td>Topiramate</td>
+                      <td>50 – 75 mg PO BD</td>
+                      <td>aka Epiramax</td>
+                    </tr>
+                    <tr>
+                      <td>Valproate </td>
+                      <td>600 mg PO BD (starting dose)</td>
+                      <td>aka Epilim</td>
+                    </tr>
+                    <tr>
+                      <td>Calcitriol</td>
+                      <td>0.25 microg PO daily</td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>Cal-Sup</td>
+                      <td>500 mg PO TDS with meals</td>
+                      <td>Calcium carbonate</td>
+                    </tr>
+                    <tr>
+                      <td>Caltrate</td>
+                      <td>600 mg PO TDS with meals</td>
+                      <td>Calcium Carbonate</td>
+                    </tr>
+                    <tr>
+                      <td>Sevelamer </td>
+                      <td>800 mg PO TDS with meals <br/> 1600 mg PO TDS with meals</td>
+                      <td>aka Renegel</td>
+                    </tr>
+                    <tr>
+                      <td>Cincalcet</td>
+                      <td>30 mg (up to 180 mg) PO daily with food</td>
+                      <td>aka Sensipar</td>
+                    </tr>
+                    <tr>
+                      <td>Sodium bicarbonate </td>
+                      <td>840 mg PO daily or BD</td>
+                      <td>aka Sodibic</td>
+                    </tr>
+                    <tr>
+                      <td>EPO</td>
+                      <td>4000 units sub-cut (or IV on HDx) weekly</td>
+                      <td>aka Eprex</td>
+                    </tr>
+                    <tr>
+                      <td>Iron Polymaltose</td>
+                      <td>100 mg IV (on HDx) weekly</td>
+                      <td>aka Ferrosig</td>
+                    </tr>
+                    <tr>
+                      <td>Folate</td>
+                      <td>5 mg PO daily</td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>Tacrolimus</td>
+                      <td>Variable PO BD</td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>Mycophenolate</td>
+                      <td>Variable PO daily</td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>Cortisone</td>
+                      <td>12.5 – 50 mg PO daily</td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>Exenatide </td>
+                      <td>5 microg subcut BD before meals</td>
+                      <td>aka Byetta</td>
+                    </tr>
+                    <tr>
+                      <td>Gliclazide MR </td>
+                      <td>60–120 mg PO mane (standard) <br/> Sometimes additional 30–60 mg introduced nocte</td>
+                      <td>aka Diamicron</td>
+                    </tr>
+                    <tr>
+                      <td>Metformin</td>
+                      <td>500 mg PO mane (starting) <br/> Up to 1 g PO TDS</td>
+                      <td>aka Glucophage</td>
+                    </tr>
+                    <tr>
+                      <td>Sitagliptin </td>
+                      <td>25 – 100 mg PO daily</td>
+                      <td>aka Januvia</td>
+                    </tr>
+                    <tr>
+                      <td>Thyroxine </td>
+                      <td>50 – 100 mcg PO mane</td>
+                      <td>aka Synthroid</td>
+                    </tr>
+                    <tr>
+                      <td>Allopurinol</td>
+                      <td>300 mg PO daily (standard) <br/> 100 mg PO daily (renal dose)</td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>Colchicine</td>
+                      <td>500 microg PO daily</td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>Hydroxychloroquine </td>
+                      <td>200 mg PO daily</td>
+                      <td>aka Plaquenil</td>
+                    </tr>
+                    <tr>
+                      <td>Mycophenolate</td>
+                      <td>Variable; typically 1 g PO BD in transplant patients</td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>Zoledronic Acid</td>
+                      <td>5 mg IV annually for osteoporosis</td>
+                      <td>aka Aclasta</td>
+                    </tr>
+                    <tr>
+                      <td>Apixaban</td>
+                      <td>5 mg PO BD (standard) <br/> 2.5 mg PO BD (renally adjusted)</td>
+                      <td>aka Eliquis</td>
+                    </tr>
+                    <tr>
+                      <td>Dabigatran</td>
+                      <td>150 mg PO BD (AF, DVT/PE) <br/> 75 mg PO BD (renally adjusted)</td>
+                      <td>needs renal adjustment when GFR under 30</td>
+                    </tr>
+                    <tr>
+                      <td>Dalteparin</td>
+                      <td>5000 units subcut daily (prophylaxis)</td>
+                      <td>aka Fragmin</td>
+                    </tr>
+                    <tr>
+                      <td>Enoxaparin </td>
+                      <td>40 mg subcut daily (DVT prophylaxis) <br/> 1 mg/kg subcut BD or <br/> 1.5 mg/kg subcut daily (treatment dose)</td>
+                      <td>aka Clexane</td>
+                    </tr>
+                    <tr>
+                      <td>Heparin</td>
+                      <td>5000 units subcut daily (DVT prophylaxis)</td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>Rivaroxaban</td>
+                      <td>15 mg PO BD (loading dose) <br/> 20 mg PO daily</td>
+                      <td>aka Xarelto</td>
+                    </tr>
+                    <tr>
+                      <td>Warfarin</td>
+                      <td>5 mg PO 1600 daily (usual starting dose)</td>
+                      <td>aka Coumadin, Marevan</td>
+                    </tr>
+                    <tr>
+                      <td>Alprazolam </td>
+                      <td>0.25–0.5 mg PO TDS (anxiety)</td>
+                      <td>aka Xanax, 6-12 hours</td>
+                    </tr>
+                    <tr>
+                      <td>Amitriptyline </td>
+                      <td>25 – 75 mg PO nocte (starting)</td>
+                      <td>aka Endep</td>
+                    </tr>
+                    <tr>
+                      <td>Desvenlafaxine </td>
+                      <td>50 – 200 mg PO daily</td>
+                      <td>aka Pristiq</td>
+                    </tr>
+                    <tr>
+                      <td>Duloxetine</td>
+                      <td>30 – 60 mg PO daily</td>
+                      <td>aka Cymbalta</td>
+                    </tr>
+                    <tr>
+                      <td>Escitalopram</td>
+                      <td>10 mg PO daily</td>
+                      <td>aka Lexapro</td>
+                    </tr>
+                    <tr>
+                      <td>Fluoxetine</td>
+                      <td>20 – 60 mg PO daily (depression) <br/> 10 – 20 mg PO daily (panic disorder)</td>
+                      <td>aka Prozac</td>
+                    </tr>
+                    <tr>
+                      <td>Haloperidol </td>
+                      <td>0.5–1 mg IM stat (acute behaviour) <br/> 0.5 - 1mg subcut PRN (for nausea)</td>
+                      <td>aka Serenace</td>
+                    </tr>
+                    <tr>
+                      <td>Lithium</td>
+                      <td>250 mg PO TDS</td>
+                      <td>therapeutic levels (0.4–1.0 mmol/L)</td>
+                    </tr>
+                    <tr>
+                      <td>Midazolam</td>
+                      <td>2.5 – 5 mg IV boluses </td>
+                      <td>very short acting, can also be given subcut</td>
+                    </tr>
+                    <tr>
+                      <td>Olanzapine</td>
+                      <td>5 – 20 mg PO daily</td>
+                      <td>aka Zyprexa</td>
+                    </tr>
+                    <tr>
+                      <td>Quetiapine</td>
+                      <td>25 mg PO BD (starting dose)</td>
+                      <td>aka Seroquel</td>
+                    </tr>
+                    <tr>
+                      <td>Risperidone</td>
+                      <td>1 mg PO BD (starting dose psychosis) <br/> 0.5 – 1 mg SL stat (acute behaviour)</td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>Sertraline</td>
+                      <td>50 – 200 mg PO daily</td>
+                      <td>aka Zoloft</td>
+                    </tr>
+                    <tr>
+                      <td>Temazepam</td>
+                      <td>10 mg PO nocte PRN (for initial insomnia)</td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>Calcium</td>
+                      <td>600 mg PO daily</td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>Chlorvescent</td>
+                      <td>1 to 2 tabs PO usually as stat order</td>
+                      <td>1 tab = 14 mmol K+</td>
+                    </tr>
+                    <tr>
+                      <td>Cholecalciferol (Vitamin D)</td>
+                      <td>25 mcg PO daily <br/> 50 mcg PO daily <br/>50 mcg PO BD</td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>Cyanocobalamin (Vitamin B12)</td>
+                      <td>1 mg IM monthly</td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>Iron tablets</td>
+                      <td>Variable (multivitamin) PO daily</td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>Magnesium</td>
+                      <td>500 mg PO daily to BD</td>
+                      <td>aka Magmin</td>
+                    </tr>
+                    <tr>
+                      <td>Resonium</td>
+                      <td>15–30 g PO usually as a stat order</td>
+                      <td>Use with insulin</td>
+                    </tr>
+                    <tr>
+                      <td>Sandoz Phosphate</td>
+                      <td>500 mg PO daily</td>
+                      <td>for hypercalcemia</td>
+                    </tr>
+                    <tr>
+                      <td>Slow-K</td>
+                      <td>1 to 2 tabs PO daily to BD</td>
+                      <td>1 tablet = 8 mmol K+</td>
+                    </tr>
+                    <tr>
+                      <td>Thiamine (Vitamin B1)</td>
+                      <td>100 mg PO daily</td>
+                      <td>aka betamin</td>
+                    </tr>
+                </tbody>
+            </table>
+
+
+
+    </div>
+
+    <!-- jQuery CDN - Slim version (=without AJAX) -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <!-- Popper.JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+    <!-- jQuery Custom Scroller CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
+    <!-- local script -->
+    <script src="/../../global/global.js"></script>
+    <script src="medicationsearch.js"></script>
+</body>
+
+</html>
