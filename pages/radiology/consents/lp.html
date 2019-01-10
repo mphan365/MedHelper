@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>MedHelp Project</title>
+    <link rel="shortcut icon" href="../../../images/shortcutico.ico">
+
+    <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../../../global/global.css">
+    <link rel="stylesheet" href="lp.css">
+    <!-- Scrollbar Custom CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
+
+    <!-- Font Awesome JS -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <!-- Sidebar  -->
+        <nav id="sidebar">
+            <div class="sidebar-header">
+                <h3>MedHelp Project</h3>
+            </div>
+
+            <ul class="list-unstyled components">
+                <p>Categories</p>
+                <li class="active">
+                    <a href="#CardioMenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Radiology Consents</a>
+                    <ul class="collapse list-unstyled" id="CardioMenu">
+                        <li>
+                            <a href="#">Lumbar Puncture</a>
+                        </li>
+                        <li>
+                            <a href="#">placeholder</a>
+                        </li>
+                        <li>
+                            <a href="#">placeholder</a>
+                        </li>
+                    </ul>
+                </li>
+
+            </ul>
+
+        </nav>
+
+        <!-- Page Content  -->
+        <div id="content">
+
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+
+                    <button type="button" id="sidebarCollapse" class="btn btn-light">
+                        <i class="fas fa-bars"></i>
+                        <span>Menu</span>
+                    </button>
+                    <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fas fa-align-justify"></i>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="nav navbar-nav ml-auto">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="../../index.html">Home</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Medications</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../calculators/calculatorindex.html">Calculators</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+            <h3><u> Lumbar Puncture Consent</u> </h3>
+            <p></p>
+            <ul> <h4> Indications </h4>
+                <ul>Back pain (interveretebral disc disease) +/- sciatica</ul>
+                <ul>Post surgical back pain </ul>
+            </ul>
+            <ul> <h4> Contraindications </h4>
+                <ul>Coagulopathy</ul>
+                <ul>Allergy to steroid/local anaesthetic</ul>
+                <ul>Pregnancy</ul>
+            </ul>
+            <ul> <h4> Pre-Procedure </h4>
+                <ul>Informed consent</ul>
+                <ul>Check previous imaging, ensure previous CT/MRI is available </ul>
+                <ul>Check for coagulopathy or anticoagulants (as per anticoagulant protocol) </ul>
+                <ul><i>Coagulation profile not routinely required</i></ul>
+            </ul>
+            <ul> <h4> Procedure </h4>
+                <ul>Prone position in CT scanner</ul>
+                <ul>Preliminary CT for planning</ul>
+                <ul>Aseptic technique</ul>
+                <ul>Local anaesthetic to skin</ul>
+                <ul>Insertion of 22G spinal needle to appropriate lumbar epidural space, with injection of air to confirm position</ul>
+                <ul>Injection 4mg dexamethasone and 1ml 1% lignocaine</ul>
+            </ul>
+            <ul> <h4> Post Procedure </h4>
+                <ul>Clinical review within 30 minutes</ul>
+            </ul>
+            <ul> <h4> Indications </h4>
+                <ul>Temporary increase in back pain / sciatica</ul>
+                <ul>Minimal or no symptom improvement</ul>
+                <ul>Dural puncture</ul>
+                <ul>Intrathecal injection, which can very rarely cause arachnoiditis</ul>
+                <ul>Epidural haematoma (very rare)</ul>
+                <ul>Infection / meningitis / epidural abscess (rare)</ul>
+            </ul>
+
+
+
+
+
+
+
+
+
+
+    </div>
+
+    <!-- jQuery CDN - Slim version (=without AJAX) -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <!-- Popper.JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+    <!-- jQuery Custom Scroller CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
+    <!-- local script -->
+    <script src="../../../global/global.js"></script>
+    <script src="lp.js"></script>
+</body>
+
+</html>
